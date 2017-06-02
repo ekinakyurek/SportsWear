@@ -1,0 +1,818 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E34B97681EE21FD300CDD064 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34B97671EE21FD300CDD064 /* AppDelegate.swift */; };
+		E34B976A1EE21FD300CDD064 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34B97691EE21FD300CDD064 /* ViewController.swift */; };
+		E34B976D1EE21FD300CDD064 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E34B976B1EE21FD300CDD064 /* Main.storyboard */; };
+		E34B976F1EE21FD300CDD064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E34B976E1EE21FD300CDD064 /* Assets.xcassets */; };
+		E34B97721EE21FD300CDD064 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E34B97701EE21FD300CDD064 /* LaunchScreen.storyboard */; };
+		E34B977D1EE21FD300CDD064 /* SportsWearTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34B977C1EE21FD300CDD064 /* SportsWearTests.swift */; };
+		E34B97881EE21FD300CDD064 /* SportsWearUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34B97871EE21FD300CDD064 /* SportsWearUITests.swift */; };
+		E34B978D1EE21FD300CDD064 /* SportsWear WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E34B978C1EE21FD300CDD064 /* SportsWear WatchKit App.app */; };
+		E34B97931EE21FD300CDD064 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E34B97911EE21FD300CDD064 /* Interface.storyboard */; };
+		E34B97951EE21FD300CDD064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E34B97941EE21FD300CDD064 /* Assets.xcassets */; };
+		E34B979C1EE21FD300CDD064 /* SportsWear WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E34B979B1EE21FD300CDD064 /* SportsWear WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E34B97A31EE21FD300CDD064 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34B97A21EE21FD300CDD064 /* InterfaceController.swift */; };
+		E34B97A51EE21FD300CDD064 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34B97A41EE21FD300CDD064 /* ExtensionDelegate.swift */; };
+		E34B97A71EE21FD300CDD064 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34B97A61EE21FD300CDD064 /* NotificationController.swift */; };
+		E34B97A91EE21FD300CDD064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E34B97A81EE21FD300CDD064 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E34B97791EE21FD300CDD064 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E34B975C1EE21FD300CDD064 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E34B97631EE21FD300CDD064;
+			remoteInfo = SportsWear;
+		};
+		E34B97841EE21FD300CDD064 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E34B975C1EE21FD300CDD064 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E34B97631EE21FD300CDD064;
+			remoteInfo = SportsWear;
+		};
+		E34B978E1EE21FD300CDD064 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E34B975C1EE21FD300CDD064 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E34B978B1EE21FD300CDD064;
+			remoteInfo = "SportsWear WatchKit App";
+		};
+		E34B979D1EE21FD300CDD064 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E34B975C1EE21FD300CDD064 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E34B979A1EE21FD300CDD064;
+			remoteInfo = "SportsWear WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E34B97B01EE21FD300CDD064 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E34B979C1EE21FD300CDD064 /* SportsWear WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34B97B41EE21FD300CDD064 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E34B978D1EE21FD300CDD064 /* SportsWear WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E34B97641EE21FD300CDD064 /* SportsWear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsWear.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E34B97671EE21FD300CDD064 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E34B97691EE21FD300CDD064 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E34B976C1EE21FD300CDD064 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E34B976E1EE21FD300CDD064 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E34B97711EE21FD300CDD064 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E34B97731EE21FD300CDD064 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E34B97781EE21FD300CDD064 /* SportsWearTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportsWearTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E34B977C1EE21FD300CDD064 /* SportsWearTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsWearTests.swift; sourceTree = "<group>"; };
+		E34B977E1EE21FD300CDD064 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E34B97831EE21FD300CDD064 /* SportsWearUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportsWearUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E34B97871EE21FD300CDD064 /* SportsWearUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsWearUITests.swift; sourceTree = "<group>"; };
+		E34B97891EE21FD300CDD064 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E34B978C1EE21FD300CDD064 /* SportsWear WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SportsWear WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E34B97921EE21FD300CDD064 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		E34B97941EE21FD300CDD064 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E34B97961EE21FD300CDD064 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E34B979B1EE21FD300CDD064 /* SportsWear WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SportsWear WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E34B97A11EE21FD300CDD064 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		E34B97A21EE21FD300CDD064 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		E34B97A41EE21FD300CDD064 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		E34B97A61EE21FD300CDD064 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		E34B97A81EE21FD300CDD064 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E34B97AA1EE21FD300CDD064 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E34B97611EE21FD300CDD064 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34B97751EE21FD300CDD064 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34B97801EE21FD300CDD064 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34B97981EE21FD300CDD064 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E34B975B1EE21FD300CDD064 = {
+			isa = PBXGroup;
+			children = (
+				E34B97661EE21FD300CDD064 /* SportsWear */,
+				E34B977B1EE21FD300CDD064 /* SportsWearTests */,
+				E34B97861EE21FD300CDD064 /* SportsWearUITests */,
+				E34B97901EE21FD300CDD064 /* SportsWear WatchKit App */,
+				E34B979F1EE21FD300CDD064 /* SportsWear WatchKit Extension */,
+				E34B97651EE21FD300CDD064 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E34B97651EE21FD300CDD064 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E34B97641EE21FD300CDD064 /* SportsWear.app */,
+				E34B97781EE21FD300CDD064 /* SportsWearTests.xctest */,
+				E34B97831EE21FD300CDD064 /* SportsWearUITests.xctest */,
+				E34B978C1EE21FD300CDD064 /* SportsWear WatchKit App.app */,
+				E34B979B1EE21FD300CDD064 /* SportsWear WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E34B97661EE21FD300CDD064 /* SportsWear */ = {
+			isa = PBXGroup;
+			children = (
+				E34B97671EE21FD300CDD064 /* AppDelegate.swift */,
+				E34B97691EE21FD300CDD064 /* ViewController.swift */,
+				E34B976B1EE21FD300CDD064 /* Main.storyboard */,
+				E34B976E1EE21FD300CDD064 /* Assets.xcassets */,
+				E34B97701EE21FD300CDD064 /* LaunchScreen.storyboard */,
+				E34B97731EE21FD300CDD064 /* Info.plist */,
+			);
+			path = SportsWear;
+			sourceTree = "<group>";
+		};
+		E34B977B1EE21FD300CDD064 /* SportsWearTests */ = {
+			isa = PBXGroup;
+			children = (
+				E34B977C1EE21FD300CDD064 /* SportsWearTests.swift */,
+				E34B977E1EE21FD300CDD064 /* Info.plist */,
+			);
+			path = SportsWearTests;
+			sourceTree = "<group>";
+		};
+		E34B97861EE21FD300CDD064 /* SportsWearUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E34B97871EE21FD300CDD064 /* SportsWearUITests.swift */,
+				E34B97891EE21FD300CDD064 /* Info.plist */,
+			);
+			path = SportsWearUITests;
+			sourceTree = "<group>";
+		};
+		E34B97901EE21FD300CDD064 /* SportsWear WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				E34B97911EE21FD300CDD064 /* Interface.storyboard */,
+				E34B97941EE21FD300CDD064 /* Assets.xcassets */,
+				E34B97961EE21FD300CDD064 /* Info.plist */,
+			);
+			path = "SportsWear WatchKit App";
+			sourceTree = "<group>";
+		};
+		E34B979F1EE21FD300CDD064 /* SportsWear WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E34B97A21EE21FD300CDD064 /* InterfaceController.swift */,
+				E34B97A41EE21FD300CDD064 /* ExtensionDelegate.swift */,
+				E34B97A61EE21FD300CDD064 /* NotificationController.swift */,
+				E34B97A81EE21FD300CDD064 /* Assets.xcassets */,
+				E34B97AA1EE21FD300CDD064 /* Info.plist */,
+				E34B97A01EE21FD300CDD064 /* Supporting Files */,
+			);
+			path = "SportsWear WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		E34B97A01EE21FD300CDD064 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E34B97A11EE21FD300CDD064 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E34B97631EE21FD300CDD064 /* SportsWear */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E34B97B51EE21FD300CDD064 /* Build configuration list for PBXNativeTarget "SportsWear" */;
+			buildPhases = (
+				E34B97601EE21FD300CDD064 /* Sources */,
+				E34B97611EE21FD300CDD064 /* Frameworks */,
+				E34B97621EE21FD300CDD064 /* Resources */,
+				E34B97B41EE21FD300CDD064 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E34B978F1EE21FD300CDD064 /* PBXTargetDependency */,
+			);
+			name = SportsWear;
+			productName = SportsWear;
+			productReference = E34B97641EE21FD300CDD064 /* SportsWear.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E34B97771EE21FD300CDD064 /* SportsWearTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E34B97B81EE21FD300CDD064 /* Build configuration list for PBXNativeTarget "SportsWearTests" */;
+			buildPhases = (
+				E34B97741EE21FD300CDD064 /* Sources */,
+				E34B97751EE21FD300CDD064 /* Frameworks */,
+				E34B97761EE21FD300CDD064 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E34B977A1EE21FD300CDD064 /* PBXTargetDependency */,
+			);
+			name = SportsWearTests;
+			productName = SportsWearTests;
+			productReference = E34B97781EE21FD300CDD064 /* SportsWearTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E34B97821EE21FD300CDD064 /* SportsWearUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E34B97BB1EE21FD300CDD064 /* Build configuration list for PBXNativeTarget "SportsWearUITests" */;
+			buildPhases = (
+				E34B977F1EE21FD300CDD064 /* Sources */,
+				E34B97801EE21FD300CDD064 /* Frameworks */,
+				E34B97811EE21FD300CDD064 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E34B97851EE21FD300CDD064 /* PBXTargetDependency */,
+			);
+			name = SportsWearUITests;
+			productName = SportsWearUITests;
+			productReference = E34B97831EE21FD300CDD064 /* SportsWearUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E34B978B1EE21FD300CDD064 /* SportsWear WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E34B97B11EE21FD300CDD064 /* Build configuration list for PBXNativeTarget "SportsWear WatchKit App" */;
+			buildPhases = (
+				E34B978A1EE21FD300CDD064 /* Resources */,
+				E34B97B01EE21FD300CDD064 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E34B979E1EE21FD300CDD064 /* PBXTargetDependency */,
+			);
+			name = "SportsWear WatchKit App";
+			productName = "SportsWear WatchKit App";
+			productReference = E34B978C1EE21FD300CDD064 /* SportsWear WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		E34B979A1EE21FD300CDD064 /* SportsWear WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E34B97AD1EE21FD300CDD064 /* Build configuration list for PBXNativeTarget "SportsWear WatchKit Extension" */;
+			buildPhases = (
+				E34B97971EE21FD300CDD064 /* Sources */,
+				E34B97981EE21FD300CDD064 /* Frameworks */,
+				E34B97991EE21FD300CDD064 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SportsWear WatchKit Extension";
+			productName = "SportsWear WatchKit Extension";
+			productReference = E34B979B1EE21FD300CDD064 /* SportsWear WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E34B975C1EE21FD300CDD064 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Ekin Akyürek";
+				TargetAttributes = {
+					E34B97631EE21FD300CDD064 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 573682DC5D;
+						ProvisioningStyle = Automatic;
+					};
+					E34B97771EE21FD300CDD064 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 573682DC5D;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E34B97631EE21FD300CDD064;
+					};
+					E34B97821EE21FD300CDD064 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 573682DC5D;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E34B97631EE21FD300CDD064;
+					};
+					E34B978B1EE21FD300CDD064 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 573682DC5D;
+						ProvisioningStyle = Automatic;
+					};
+					E34B979A1EE21FD300CDD064 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 573682DC5D;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E34B975F1EE21FD300CDD064 /* Build configuration list for PBXProject "SportsWear" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E34B975B1EE21FD300CDD064;
+			productRefGroup = E34B97651EE21FD300CDD064 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E34B97631EE21FD300CDD064 /* SportsWear */,
+				E34B97771EE21FD300CDD064 /* SportsWearTests */,
+				E34B97821EE21FD300CDD064 /* SportsWearUITests */,
+				E34B978B1EE21FD300CDD064 /* SportsWear WatchKit App */,
+				E34B979A1EE21FD300CDD064 /* SportsWear WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E34B97621EE21FD300CDD064 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34B97721EE21FD300CDD064 /* LaunchScreen.storyboard in Resources */,
+				E34B976F1EE21FD300CDD064 /* Assets.xcassets in Resources */,
+				E34B976D1EE21FD300CDD064 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34B97761EE21FD300CDD064 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34B97811EE21FD300CDD064 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34B978A1EE21FD300CDD064 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34B97951EE21FD300CDD064 /* Assets.xcassets in Resources */,
+				E34B97931EE21FD300CDD064 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34B97991EE21FD300CDD064 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34B97A91EE21FD300CDD064 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E34B97601EE21FD300CDD064 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34B976A1EE21FD300CDD064 /* ViewController.swift in Sources */,
+				E34B97681EE21FD300CDD064 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34B97741EE21FD300CDD064 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34B977D1EE21FD300CDD064 /* SportsWearTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34B977F1EE21FD300CDD064 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34B97881EE21FD300CDD064 /* SportsWearUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34B97971EE21FD300CDD064 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34B97A71EE21FD300CDD064 /* NotificationController.swift in Sources */,
+				E34B97A51EE21FD300CDD064 /* ExtensionDelegate.swift in Sources */,
+				E34B97A31EE21FD300CDD064 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E34B977A1EE21FD300CDD064 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E34B97631EE21FD300CDD064 /* SportsWear */;
+			targetProxy = E34B97791EE21FD300CDD064 /* PBXContainerItemProxy */;
+		};
+		E34B97851EE21FD300CDD064 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E34B97631EE21FD300CDD064 /* SportsWear */;
+			targetProxy = E34B97841EE21FD300CDD064 /* PBXContainerItemProxy */;
+		};
+		E34B978F1EE21FD300CDD064 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E34B978B1EE21FD300CDD064 /* SportsWear WatchKit App */;
+			targetProxy = E34B978E1EE21FD300CDD064 /* PBXContainerItemProxy */;
+		};
+		E34B979E1EE21FD300CDD064 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E34B979A1EE21FD300CDD064 /* SportsWear WatchKit Extension */;
+			targetProxy = E34B979D1EE21FD300CDD064 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E34B976B1EE21FD300CDD064 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E34B976C1EE21FD300CDD064 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E34B97701EE21FD300CDD064 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E34B97711EE21FD300CDD064 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E34B97911EE21FD300CDD064 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E34B97921EE21FD300CDD064 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E34B97AB1EE21FD300CDD064 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E34B97AC1EE21FD300CDD064 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E34B97AE1EE21FD300CDD064 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 573682DC5D;
+				INFOPLIST_FILE = "SportsWear WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = molocate.SportsWear.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		E34B97AF1EE21FD300CDD064 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 573682DC5D;
+				INFOPLIST_FILE = "SportsWear WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = molocate.SportsWear.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		E34B97B21EE21FD300CDD064 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 573682DC5D;
+				IBSC_MODULE = SportsWear_WatchKit_Extension;
+				INFOPLIST_FILE = "SportsWear WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = molocate.SportsWear.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		E34B97B31EE21FD300CDD064 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 573682DC5D;
+				IBSC_MODULE = SportsWear_WatchKit_Extension;
+				INFOPLIST_FILE = "SportsWear WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = molocate.SportsWear.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		E34B97B61EE21FD300CDD064 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 573682DC5D;
+				INFOPLIST_FILE = SportsWear/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = molocate.SportsWear;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E34B97B71EE21FD300CDD064 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 573682DC5D;
+				INFOPLIST_FILE = SportsWear/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = molocate.SportsWear;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E34B97B91EE21FD300CDD064 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 573682DC5D;
+				INFOPLIST_FILE = SportsWearTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = molocate.SportsWearTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SportsWear.app/SportsWear";
+			};
+			name = Debug;
+		};
+		E34B97BA1EE21FD300CDD064 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 573682DC5D;
+				INFOPLIST_FILE = SportsWearTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = molocate.SportsWearTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SportsWear.app/SportsWear";
+			};
+			name = Release;
+		};
+		E34B97BC1EE21FD300CDD064 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 573682DC5D;
+				INFOPLIST_FILE = SportsWearUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = molocate.SportsWearUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SportsWear;
+			};
+			name = Debug;
+		};
+		E34B97BD1EE21FD300CDD064 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 573682DC5D;
+				INFOPLIST_FILE = SportsWearUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = molocate.SportsWearUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = SportsWear;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E34B975F1EE21FD300CDD064 /* Build configuration list for PBXProject "SportsWear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E34B97AB1EE21FD300CDD064 /* Debug */,
+				E34B97AC1EE21FD300CDD064 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E34B97AD1EE21FD300CDD064 /* Build configuration list for PBXNativeTarget "SportsWear WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E34B97AE1EE21FD300CDD064 /* Debug */,
+				E34B97AF1EE21FD300CDD064 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E34B97B11EE21FD300CDD064 /* Build configuration list for PBXNativeTarget "SportsWear WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E34B97B21EE21FD300CDD064 /* Debug */,
+				E34B97B31EE21FD300CDD064 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E34B97B51EE21FD300CDD064 /* Build configuration list for PBXNativeTarget "SportsWear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E34B97B61EE21FD300CDD064 /* Debug */,
+				E34B97B71EE21FD300CDD064 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E34B97B81EE21FD300CDD064 /* Build configuration list for PBXNativeTarget "SportsWearTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E34B97B91EE21FD300CDD064 /* Debug */,
+				E34B97BA1EE21FD300CDD064 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E34B97BB1EE21FD300CDD064 /* Build configuration list for PBXNativeTarget "SportsWearUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E34B97BC1EE21FD300CDD064 /* Debug */,
+				E34B97BD1EE21FD300CDD064 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E34B975C1EE21FD300CDD064 /* Project object */;
+}
