@@ -379,6 +379,9 @@
 						DevelopmentTeam = 573682DC5D;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 1;
+							};
 							com.apple.HealthKit.watchos = {
 								enabled = 1;
 							};

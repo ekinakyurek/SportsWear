@@ -9,8 +9,9 @@
 import WatchKit
 import Foundation
 import HealthKit
-
-class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate  {
+import CoreMotion
+let motionManager = CMMotionManager()
+class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate {
 
     @IBOutlet var deviceName: WKInterfaceLabel!
     @IBOutlet var heartRate: WKInterfaceLabel!
@@ -21,12 +22,14 @@ class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate  {
     var session : HKWorkoutSession?
     var workoutActive = false
     
+    var timer: Timer!
+    
     @IBOutlet var startButton: WKInterfaceButton!
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-       
-        guard HKHealthStore.isHealthDataAvailable() == true else {
+        
+              guard HKHealthStore.isHealthDataAvailable() == true else {
             heartRate.setText("not available")
             return
         }
@@ -42,9 +45,28 @@ class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate  {
                 self.displayNotAllowed()
             }
         }
-        
+        motionManager.deviceMotionUpdateInterval = 0.1;
+        motionManager.magnetometerUpdateInterval = 0.1;
+        motionManager.accelerometerUpdateInterval = 0.1;
+        motionManager.gyroUpdateInterval = 0.1;
+
         // Configure interface objects here.
         
+    }
+    
+    func update() {
+        if let accelerometerData = motionManager.accelerometerData {
+            print(accelerometerData)
+        }
+        if let gyroData = motionManager.gyroData {
+            print(gyroData)
+        }
+        if let magnetometerData = motionManager.magnetometerData {
+            print(magnetometerData)
+        }
+        if let deviceMotion = motionManager.deviceMotion {
+            print(deviceMotion)
+        }
     }
     
     func displayNotAllowed() {
@@ -79,6 +101,12 @@ class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate  {
     
     func workoutDidEnd(_ date : Date) {
         healthStore.stop(self.currenQuery!)
+        motionManager.stopGyroUpdates()
+        motionManager.stopDeviceMotionUpdates()
+        motionManager.stopMagnetometerUpdates()
+        motionManager.stopAccelerometerUpdates()
+        timer.invalidate();
+        timer = nil;
         heartRate.setText("---")
         session = nil
     }
@@ -95,7 +123,7 @@ class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate  {
         
         // Configure the workout session.
         let workoutConfiguration = HKWorkoutConfiguration()
-        workoutConfiguration.activityType = .crossTraining
+        workoutConfiguration.activityType = .tennis
         workoutConfiguration.locationType = .indoor
         
         do {
@@ -106,6 +134,11 @@ class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate  {
         }
         
         healthStore.start(self.session!)
+        motionManager.startAccelerometerUpdates()
+        motionManager.startGyroUpdates()
+        motionManager.startMagnetometerUpdates()
+        motionManager.startDeviceMotionUpdates()
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(InterfaceController.update), userInfo: nil, repeats: true)
     }
     
     func createHeartRateStreamingQuery(_ workoutStartDate: Date) -> HKQuery? {
