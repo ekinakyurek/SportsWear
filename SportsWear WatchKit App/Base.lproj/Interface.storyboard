@@ -1,14 +1,50 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Symbol.ttf">
+            <string>Symbol</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SportsWear_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" text="Device Name" id="Ku1-pv-y3L"/>
+                        <group width="1" alignment="left" id="Use-yH-S9W">
+                            <items>
+                                <imageView alignment="left" image="heart" id="X4K-Tb-Ufx"/>
+                                <label alignment="center" text="---" minimumScaleFactor="0.20000000000000001" id="hLC-5Q-nXS">
+                                    <fontDescription key="font" name="Symbol" family="Symbol" pointSize="28"/>
+                                </label>
+                                <label alignment="right" text="BPM" minimumScaleFactor="0.20000000000000001" id="EVX-29-fbg">
+                                    <color key="textColor" red="1" green="0.0" blue="0.1592381612066962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" name="Symbol" family="Symbol" pointSize="14"/>
+                                </label>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Start" id="b9y-Wp-ngW">
+                            <connections>
+                                <action selector="startBtnTapped" destination="AgC-eL-Hgc" id="1rd-pd-RKV"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="deviceName" destination="Ku1-pv-y3L" id="DkU-z4-C5b"/>
+                        <outlet property="heart" destination="X4K-Tb-Ufx" id="EXR-pF-82U"/>
+                        <outlet property="heartRate" destination="hLC-5Q-nXS" id="Den-Uz-kKK"/>
+                        <outlet property="startButton" destination="b9y-Wp-ngW" id="emE-YH-Liw"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
@@ -31,7 +67,7 @@
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="SportsWear_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="468" y="643"/>
         </scene>
